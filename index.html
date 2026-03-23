@@ -14,9 +14,20 @@
             <div class="score">Score: <span id="score">0</span></div>
             <div class="timer">Time: <span id="time">30</span>s</div>
             <button id="start-btn">Start Game</button>
+            <button id="reset-btn">Reset Game</button>
         </div>
         
         <div id="game-container">
+        </div>
+
+        <div id="game-over-modal" class="modal-hidden" role="dialog" aria-modal="true" aria-labelledby="game-over-title">
+            <div class="modal-card">
+                <h2 id="game-over-title">Great effort!</h2>
+                <p id="encouraging-message"></p>
+                <p id="charity-fact"></p>
+                <p class="final-score">Total Score: <span id="final-score">0</span></p>
+                <button id="play-again-btn">Play Again</button>
+            </div>
         </div>
     </div>
     
