@@ -41,6 +41,12 @@ body {
     position: relative;
 }
 
+.brand-logo {
+    width: clamp(120px, 20vw, 180px);
+    height: auto;
+    filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.14));
+}
+
 .score-panel {
     display: flex;
     justify-content: space-between;  /* Space between score and button */
@@ -289,6 +295,10 @@ body {
 @media (max-width: 850px) {
     .game-wrapper, .score-panel, #game-container {
         width: 95vw;
+    }
+
+    .brand-logo {
+        width: clamp(110px, 34vw, 150px);
     }
     
     #game-container {
